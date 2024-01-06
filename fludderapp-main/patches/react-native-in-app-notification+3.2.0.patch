@@ -1,0 +1,52 @@
+diff --git a/node_modules/react-native-in-app-notification/src/DefaultNotificationBody/index.android.js b/node_modules/react-native-in-app-notification/src/DefaultNotificationBody/index.android.js
+index 8593ef7..8ef29df 100644
+--- a/node_modules/react-native-in-app-notification/src/DefaultNotificationBody/index.android.js
++++ b/node_modules/react-native-in-app-notification/src/DefaultNotificationBody/index.android.js
+@@ -105,9 +105,8 @@ DefaultNotificationBody.propTypes = {
+   isOpen: PropTypes.bool,
+   onPress: PropTypes.func,
+   onClose: PropTypes.func,
+-  iconApp: Image.propTypes.source,
+-  icon: Image.propTypes.source,
+-  additionalProps: PropTypes.object,
++  iconApp: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
++  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+ };
+ 
+ DefaultNotificationBody.defaultProps = {
+@@ -119,7 +118,6 @@ DefaultNotificationBody.defaultProps = {
+   icon: null,
+   onPress: () => null,
+   onClose: () => null,
+-  additionalProps: null,
+ };
+ 
+ export default DefaultNotificationBody;
+diff --git a/node_modules/react-native-in-app-notification/src/DefaultNotificationBody/index.ios.js b/node_modules/react-native-in-app-notification/src/DefaultNotificationBody/index.ios.js
+index 5552557..3c27269 100644
+--- a/node_modules/react-native-in-app-notification/src/DefaultNotificationBody/index.ios.js
++++ b/node_modules/react-native-in-app-notification/src/DefaultNotificationBody/index.ios.js
+@@ -144,8 +144,8 @@ DefaultNotificationBody.propTypes = {
+   isOpen: PropTypes.bool,
+   onPress: PropTypes.func,
+   onClose: PropTypes.func,
+-  iconApp: Image.propTypes.source,
+-  icon: Image.propTypes.source,
++  iconApp: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
++  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+ };
+ 
+ DefaultNotificationBody.defaultProps = {
+diff --git a/node_modules/react-native-in-app-notification/src/Notification.js b/node_modules/react-native-in-app-notification/src/Notification.js
+index c8e4508..9cdcd34 100644
+--- a/node_modules/react-native-in-app-notification/src/Notification.js
++++ b/node_modules/react-native-in-app-notification/src/Notification.js
+@@ -153,7 +153,7 @@ Notification.propTypes = {
+   topOffset: PropTypes.number,
+   backgroundColour: PropTypes.string,
+   notificationBodyComponent: PropTypes.oneOfType([PropTypes.node, PropTypes.func]),
+-  iconApp: Image.propTypes.source,
++  iconApp: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+ };
+ 
+ Notification.defaultProps = {

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "415288817533",
+    "project_id": "fludder-ece67",
+    "storage_bucket": "fludder-ece67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415288817533:android:f30a9913f1a636235a7e14",
+        "android_client_info": {
+          "package_name": "com.fludder.fludderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415288817533-4sisvb3he27aai6sk0em5ek61ba1peeh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fludder.fludderapp",
+            "certificate_hash": "ee2cc78651117cfe80df3cb6b4afcc8d61d3851d"
+          }
+        },
+        {
+          "client_id": "415288817533-iu18i9b5kpmtngfesvkd42jdq48us48g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYBzoyCviEjNee0FOxMWVXHIhkCHvhcAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "415288817533-iu18i9b5kpmtngfesvkd42jdq48us48g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "415288817533-4ma5ukjbjfh6ckicgc0rje0r9di5q7m5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fludder.fludderapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

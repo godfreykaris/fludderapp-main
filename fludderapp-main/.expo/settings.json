@@ -1,0 +1,10 @@
+{
+  "urlRandomness": "2L-GAtk",
+  "dev": true,
+  "minify": false,
+  "https": false,
+  "hostType": "tunnel",
+  "lanType": "ip",
+  "scheme": null,
+  "devClient": false
+}
